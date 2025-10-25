@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - E-Store Deoghar</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo" style="display:flex; align-items:center; justify-content:center; height:60px;">
+                <svg width="215" height="70" viewBox="0 0 215 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <!-- Creative cart body: slanted basket, stretched right to cover 't' -->
+                  <polygon points="35,25 185,15 175,55 45,55" fill="#fff" stroke="#FF7400" stroke-width="3" />
+                  <!-- Wheels with shadow -->
+                  <ellipse cx="55" cy="62" rx="10" ry="7" fill="#FF7400" stroke="#222" stroke-width="3" />
+                  <ellipse cx="165" cy="62" rx="10" ry="7" fill="#FF7400" stroke="#222" stroke-width="3" />
+                  <ellipse cx="55" cy="67" rx="10" ry="2" fill="#888" opacity="0.3" />
+                  <ellipse cx="165" cy="67" rx="10" ry="2" fill="#888" opacity="0.3" />
+                  <!-- Dynamic handle -->
+                  <rect x="20" y="10" width="30" height="6" rx="3" fill="#FF7400" stroke="#222" stroke-width="2"
+                        transform="rotate(-15 35 13)" />
+                  <!-- Logo text with gradients -->
+                  <defs>
+                      <linearGradient id="eGrad" x1="0" y1="0" x2="1" y2="0">
+                          <stop offset="0%" stop-color="#FF7400" />
+                          <stop offset="100%" stop-color="#FF0000" />
+                      </linearGradient>
+                      <linearGradient id="martGrad" x1="0" y1="0" x2="1" y2="0">
+                          <stop offset="0%" stop-color="#00C3FF" />
+                          <stop offset="100%" stop-color="#FFC100" />
+                      </linearGradient>
+                  </defs>
+                  <text x="70" y="45" font-family="Segoe UI, Arial, sans-serif" font-size="32" font-weight="bold"
+                        fill="url(#eGrad)" letter-spacing="2">E</text>
+                  <text x="100" y="45" font-family="Pacifico, cursive" font-size="32" font-weight="bold"
+                        fill="url(#martGrad)" letter-spacing="1">Mart</text>
+                </svg>
+            </div>
+            <ul class="nav-menu">
+                <li><a  href="index.html">Home</a></li>
+                <li><a href="category.html">Categories</a></li>
+                <li><a class="active" href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="navbar-right" style="display: flex; align-items: center; gap: 1.5rem;">
+                <a href="cart.html" id="cart-icon" style="color: white; font-size: 1.7rem; position: relative;">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cart-count" style="position: absolute; top: -8px; right: -10px; background: #ffd700; color: #333; border-radius: 50%; padding: 2px 7px; font-size: 0.9rem; font-weight: bold;">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1><span class="highlight">E-Mart</span></h1>
+        <p class="subtitle">Your trusted online grocery delivery partner in Kolkata</p>
+        <p class="description">
+            We are committed to bringing fresh, quality groceries right to your doorstep.
+            From premium branded products to affordable essentials, we serve the Kolkata
+            community with dedication and care. Our mission is to make grocery shopping
+            convenient, reliable, and accessible for everyone.
+        </p>
+        <button class="cta-button">
+            <a href="category.html">🛒 Start Shopping</a>
+        </button>
+    </section>
+
+    <section class="features">
+        <div class="feature-card">
+            <div class="feature-icon">🍃</div>
+            <h3>Fresh Products</h3>
+            <p>Quality packaged and raw food items delivered fresh to ensure the best experience for your family.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">📦</div>
+            <h3>Branded Quality</h3>
+            <p>Premium branded products you know and trust, bringing reliability to your kitchen and home.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">🛒</div>
+            <h3>Budget Friendly</h3>
+            <p>Affordable general products for your everyday needs without compromising on quality or service.</p>
+        </div>
+    </section>
+    
+
+    <section class="hero">
+        <h1><span class="highlight">Meet Our Team</span></h1>
+        <p class="subtitle2">The passionate people behind E-Store Deoghar</p>
+        <div class="container">
+        <div class="team-section">
+            <!-- Prem Kumar Card -->
+            <div class="team-card">
+                <img src="me.jpg" alt="Prem Kumar" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">Prem Kumar</h2>
+                    <p class="card-role role-developer">Developer & Co-Founder</p>
+                    <p class="card-description">
+                        The technical mastermind behind E-Store Deoghar's platform, Prem brings innovation and expertise to create a seamless shopping experience for our customers.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Ramesh Poddar Card -->
+            <div class="team-card">
+                <img src="father.jpg" alt="Ramesh Poddar" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">Ramesh Poddar</h2>
+                    <p class="card-role role-business">Business Owner & Co-Founder</p>
+                    <p class="card-description">
+                        With extensive business expertise, Ramesh leads E-Store Deoghar's operations, ensuring quality products and exceptional service for every customer.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="header">
+            <h1>Why Choose Us</h1>
+            <p>Your satisfaction is our priority</p>
+        </div>
+
+        <div class="cards-container">
+            <div class="card">
+                <div class="icon-wrapper">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="9" cy="7" r="4"></circle>
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                    </svg>
+                </div>
+                <h3>Customer First</h3>
+                <p>We put your needs at the heart of everything we do, ensuring a personalized shopping experience.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon-wrapper">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                    </svg>
+                </div>
+                <h3>Quality Assured</h3>
+                <p>Every product is carefully selected and verified to meet our high quality standards.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon-wrapper">
+                    <svg viewBox="0 0 24 24">
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                    </svg>
+                </div>
+                <h3>Fast Delivery</h3>
+                <p>Quick and reliable delivery service bringing fresh groceries right to your doorstep.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="header">
+            <h1>What We Offer</h1>
+            <p>Quality products for every need and budget</p>
+        </div>
+
+        <div class="cards-container">
+            <div class="card">
+                <div class="icon-wrapper">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                        <path d="M2 17l10 5 10-5"></path>
+                        <path d="M2 12l10 5 10-5"></path>
+                    </svg>
+                </div>
+                <h3>Quality Branded Products</h3>
+                <p>Premium packaged and raw food items from trusted brands. We prioritize quality to ensure you get the best products for you and your family.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon-wrapper">
+                    <svg viewBox="0 0 24 24">
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                    </svg>
+                </div>
+                <h3>Affordable General Products</h3>
+                <p>Budget-friendly options that don't compromise on quality. We believe everyone deserves access to essential items at reasonable prices.</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="cta-section">
+        <div class="cta-box">
+            <h2>Ready to Start Shopping?</h2>
+            <p>Experience the convenience of online grocery delivery in Deoghar</p>
+            <a href="category.html"><button class="shop-now-button">Shop Now</button></a>
+        </div>
+    </section>
+    <script>
+        // Cart logic using localStorage for persistence and price
+        const cartBtns = document.querySelectorAll('.cart-btn');
+        const buyBtns = document.querySelectorAll('.buy-btn');
+        const cartCount = document.getElementById('cart-count');
+
+        function getCart() {
+            return JSON.parse(localStorage.getItem('cart') || '[]');
+        }
+        function setCart(cart) {
+            localStorage.setItem('cart', JSON.stringify(cart));
+        }
+        function updateCartCount() {
+            let cart = getCart();
+            let count = 0;
+            cart.forEach(item => count += item.qty || 1);
+            cartCount.textContent = count;
+        }
+
+        cartBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                const card = btn.closest('.product-card');
+                const name = card.querySelector('h4').textContent;
+                const priceText = card.querySelector('.price').textContent.replace(/[^\d]/g, '');
+                const price = parseInt(priceText) || 0;
+                const img = card.querySelector('img') ? card.querySelector('img').src : '';
+                let cart = getCart();
+                let found = cart.find(item => item.name === name);
+                if (found) {
+                    found.qty = (found.qty || 1) + 1;
+                } else {
+                    cart.push({ name, price, img, qty: 1 });
+                }
+                setCart(cart);
+                updateCartCount();
+                btn.textContent = 'Added ✓';
+                btn.style.background = '#10b981';
+                btn.style.color = 'white';
+                setTimeout(() => {
+                    btn.textContent = 'Add to Cart';
+                    btn.style.background = '';
+                    btn.style.color = '';
+                }, 2000);
+            });
+        });
+
+        updateCartCount();
+
+        buyBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                alert('Proceeding to checkout!');
+            });
+        });
+    </script>
+</body>
+
+</html>

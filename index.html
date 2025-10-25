@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Store Deoghar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="home.css">
+    <script src="home.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+   <header>
+        <div class="header-container">
+            <div class="logo" style="display:flex; align-items:center; justify-content:center; height:60px;">
+                <svg width="215" height="70" viewBox="0 0 215 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <!-- Creative cart body: slanted basket, stretched right to cover 't' -->
+                  <polygon points="35,25 185,15 175,55 45,55" fill="#fff" stroke="#FF7400" stroke-width="3" />
+                  <!-- Wheels with shadow -->
+                  <ellipse cx="55" cy="62" rx="10" ry="7" fill="#FF7400" stroke="#222" stroke-width="3" />
+                  <ellipse cx="165" cy="62" rx="10" ry="7" fill="#FF7400" stroke="#222" stroke-width="3" />
+                  <ellipse cx="55" cy="67" rx="10" ry="2" fill="#888" opacity="0.3" />
+                  <ellipse cx="165" cy="67" rx="10" ry="2" fill="#888" opacity="0.3" />
+                  <!-- Dynamic handle -->
+                  <rect x="20" y="10" width="30" height="6" rx="3" fill="#FF7400" stroke="#222" stroke-width="2"
+                        transform="rotate(-15 35 13)" />
+                  <!-- Logo text with gradients -->
+                  <defs>
+                      <linearGradient id="eGrad" x1="0" y1="0" x2="1" y2="0">
+                          <stop offset="0%" stop-color="#FF7400" />
+                          <stop offset="100%" stop-color="#FF0000" />
+                      </linearGradient>
+                      <linearGradient id="martGrad" x1="0" y1="0" x2="1" y2="0">
+                          <stop offset="0%" stop-color="#00C3FF" />
+                          <stop offset="100%" stop-color="#FFC100" />
+                      </linearGradient>
+                  </defs>
+                  <text x="70" y="45" font-family="Segoe UI, Arial, sans-serif" font-size="32" font-weight="bold"
+                        fill="url(#eGrad)" letter-spacing="2">E</text>
+                  <text x="100" y="45" font-family="Pacifico, cursive" font-size="32" font-weight="bold"
+                        fill="url(#martGrad)" letter-spacing="1">Mart</text>
+                </svg>
+            </div>
+            <ul class="nav-menu">
+                <li><a class="active" href="home.html">Home</a></li>
+                <li><a href="category.html">Categories</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="navbar-right" style="display: flex; align-items: center; gap: 1.5rem;">
+                <a href="cart.html" id="cart-icon" style="color: white; font-size: 1.7rem; position: relative;">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cart-count" style="position: absolute; top: -8px; right: -10px; background: #ffd700; color: #333; border-radius: 50%; padding: 2px 7px; font-size: 0.9rem; font-weight: bold;">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="hero" id="home">
+        <h1>Welcome to E-Mart</h1>
+        <p>Your One-Stop Online Grocery Store</p>
+        <p>Fresh groceries, packaged food, and more delivered to your doorstep!</p>
+        <a href="category.html"><button class="cta-button">Shop Now</button></a>
+    </section>
+
+    <section class="categories" id="categories">
+        <h2>Shop by Category</h2>
+        <div class="category-grid">
+            <a href="category.html">
+                <div class="category-card">
+                    <div class="category-icon">🌾</div>
+                    <h3>Lentils</h3>
+                    <p>Rice, Wheat, Pulses & More</p>
+                </div>
+            </a>
+            <a href="spices.html">
+                <div class="category-card">
+                    <div class="category-icon">🌶</div>
+                    <h3>Spices</h3>
+                    <p>Fresh & Aromatic Spices</p>
+                </div>
+            </a>
+            <a href="sugar.html">
+                <div class="category-card">
+                    <div class="category-icon">🍬</div>
+                    <h3>Sugar & Salt</h3>
+                    <p>Essential Kitchen Staples</p>
+                </div>
+            </a>
+            <a href="snacks.html">
+                <div class="category-card">
+                    <div class="category-icon">🍿</div>
+                    <h3>Snacks</h3>
+                    <p>Real Crunch</p>
+                </div>
+            </a>
+            <a href="packet.html">
+                <div class="category-card">
+                    <div class="category-icon">🥫</div>
+                    <h3>Cooking Oil</h3>
+                    <p>Natural Cooking Oils</p>
+                </div>
+            </a>
+            <a href="riceatta.html">
+                <div class="category-card">
+                    <div class="category-icon">🛍</div>
+                    <h3>All Products</h3>
+                    <p>Browse Everything</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section class="products" id="products">
+        <h2>Today's Top Picks</h2>
+
+        <div class="product-grid">
+            <div class="product-card premium">
+                <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?w=400&h=300&fit=crop"
+                    alt="Basmati Rice">
+                <div class="product-info">
+                    <h4>Premium Basmati Rice</h4>
+                    <p class="product-desc">5kg Pack - Aged for 2 years, long grain</p>
+                    <div class="mrp">
+                        <p class="price2">₹1150</p>
+                        <p class="price">₹899</p>
+                    </div>
+                    <div class="button-group">
+                        <button class="buy-btn">Buy Now</button>
+                        <button class="cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card premium">
+                <img src="https://plus.unsplash.com/premium_photo-1675855748166-a66d26c3b6da?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8SGltYWxheWFuJTIwcGluayUyMHNhbHR8ZW58MHx8MHx8fDA%3D"
+                    alt="Himalayan Salt">
+                <div class="product-info">
+                    <h4>Himalayan Pink Salt</h4>
+                    <p class="product-desc">1kg Pack - 100% pure & natural</p>
+                    <div class="mrp">
+                        <p class="price2">₹499</p>
+                        <p class="price">₹350</p>
+                    </div>
+                    <div class="button-group">
+                        <button class="buy-btn">Buy Now</button>
+                        <button class="cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card premium">
+                <img src="https://images.unsplash.com/photo-1586810504230-09dab6b8e01b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8b2F0c3xlbnwwfHwwfHx8MA%3D%3D"
+                    alt="Organic Jaggery">
+                <div class="product-info">
+                    <h4>Fibre Oats</h4>
+                    <p class="product-desc">1kg Pack - Chemical-free, rich in iron</p>
+                    <div class="mrp">
+                        <p class="price2">₹1050</p>
+                        <p class="price">₹880</p>
+                    </div>
+                    <div class="button-group">
+                        <button class="buy-btn">Buy Now</button>
+                        <button class="cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card premium">
+                <img src="https://images.unsplash.com/photo-1646168932800-e48f378d37bb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGFja2FnZWQlMjBjaG9jb3N8ZW58MHx8MHx8fDA%3D"
+                    alt="Moong Dal">
+                <div class="product-info">
+                    <h4>Dark Chocolate</h4>
+                    <p class="product-desc">1Pack - Premium chocolate</p>
+                    <div class="mrp">
+                        <p class="price2">₹399</p>
+                        <p class="price">₹295</p>
+                    </div>
+                    <div class="button-group">
+                        <button class="buy-btn">Buy Now</button>
+                        <button class="cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card premium">
+                <img src="https://images.unsplash.com/photo-1699723521107-bb297f2642ce?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHBhY2thZ2VkJTIwY2hvY29zfGVufDB8fDB8fHww"
+                    alt="Kashmiri Saffron">
+                <div class="product-info">
+                    <h4>Nutrition Buiscuit</h4>
+                    <p class="product-desc">5 Pack - 100% pure & authentic</p>
+                    <div class="mrp">
+                        <p class="price2">₹499</p>
+                        <p class="price">₹399</p>
+                    </div>
+                    <div class="button-group">
+                        <button class="buy-btn">Buy Now</button>
+                        <button class="cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card premium">
+                <img src="https://images.unsplash.com/photo-1708515871664-510b498a8784?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cGFja2FnZWQlMjBjaG9jb3N8ZW58MHx8MHx8fDA%3D"
+                    alt="Mixed Dry Fruits">
+                <div class="product-info">
+                    <h4>Premium Mixed Dry Fruits</h4>
+                    <p class="product-desc">500g Pack - Almonds, cashews, raisins</p>
+                    <div class="mrp">
+                        <p class="price2">₹999</p>
+                        <p class="price">₹799</p>
+                    </div>
+                    <div class="button-group">
+                        <button class="buy-btn">Buy Now</button>
+                        <button class="cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card premium">
+                <img src="https://media.istockphoto.com/id/1590642598/photo/wheat-flour-package.jpg?s=612x612&w=0&k=20&c=2CPH8J5eGC1hYWoB-rTaalgX-1jKwK_7k2jSXKsO2zw="
+                    alt="Chakki Atta">
+                <div class="product-info">
+                    <h4>Whole Wheat Chakki Atta</h4>
+                    <p class="product-desc">10kg Pack - Stone ground, fiber rich</p>
+                    <div class="mrp">
+                        <p class="price2">₹530</p>
+                        <p class="price">₹480</p>
+                    </div>
+                    <div class="button-group">
+                        <button class="buy-btn">Buy Now</button>
+                        <button class="cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card premium">
+                <img src="https://images.unsplash.com/photo-1599490659213-e2b9527bd087?w=400&h=300&fit=crop"
+                    alt="Toor Dal">
+                <div class="product-info">
+                    <h4>Premium Toor Dal</h4>
+                    <p class="product-desc">1kg Pack - Unpolished pigeon peas</p>
+                    <div class="mrp">
+                        <p class="price2">₹215</p>
+                        <p class="price">₹185</p>
+                    </div>
+                    <div class="button-group">
+                        <button class="buy-btn">Buy Now</button>
+                        <button class="cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card premium">
+                <img src="https://images.unsplash.com/photo-1559658166-be35cc5eb9cb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8a2FzaG1pcmklMjByZWQlMjBjaGlsbGklMjBwb3dkZXIlMjBicmFuZHxlbnwwfHwwfHx8MA%3D%3D"
+                    alt="Red Chilli Powder">
+                <div class="product-info">
+                    <h4>Red Chilli Powder</h4>
+                    <p class="product-desc">200g Pack - Medium spice level</p>
+                    <div class="mrp">
+                        <p class="price2">₹190</p>
+                        <p class="price">₹125</p>
+                    </div>
+                    <div class="button-group">
+                        <button class="buy-btn">Buy Now</button>
+                        <button class="cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card premium">
+                <img src="https://media.istockphoto.com/id/1711953578/photo/turmeric-powder-and-roots.webp?a=1&b=1&s=612x612&w=0&k=20&c=IDQXNXjlgLFWIvji9qfw8-JzemXPmmuZy_wWKN2zH8w="
+                    alt="Turmeric Powder">
+                <div class="product-info">
+                    <h4>Pure Turmeric Powder</h4>
+                    <p class="product-desc">250g Pack - High curcumin content</p>
+                    <div class="mrp">
+                        <p class="price2">₹180</p>
+                        <p class="price">₹130</p>
+                    </div>
+                    <div class="button-group">
+                        <button class="buy-btn">Buy Now</button>
+                        <button class="cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card premium">
+                <img src="https://media.istockphoto.com/id/1388229766/photo/vegetable-oil-in-plastic-bottle.webp?a=1&b=1&s=612x612&w=0&k=20&c=twooDXgp_66UOREdJEemSCaMyIVTobWNsa8KXWeUOk0="
+                    alt="Mustard Oil">
+                <div class="product-info">
+                    <h4>Cold Pressed Mustard Oil</h4>
+                    <p class="product-desc">1L Bottle - First press, unrefined</p>
+                    <div class="mrp">
+                        <p class="price2">₹290</p>
+                        <p class="price">₹245</p>
+                    </div>
+                    <div class="button-group">
+                        <button class="buy-btn">Buy Now</button>
+                        <button class="cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card premium">
+                <img src="https://images.unsplash.com/photo-1709651808265-977ed7ef78c6?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c3VnYXJ8ZW58MHx8MHx8fDA%3D"
+                    alt="Cane Sugar">
+                <div class="product-info">
+                    <h4>Sugar</h4>
+                    <p class="product-desc">1kg Pack - Unrefined, golden color</p>
+                    <div class="mrp">
+                        <p class="price2">₹100</p>
+                        <p class="price">₹75</p>
+                    </div>
+                    <div class="button-group">
+                        <button class="buy-btn">Buy Now</button>
+                        <button class="cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 E-Mart. All rights reserved.</p>
+        <p>Quality groceries delivered with care</p>
+    </footer>
+
+    <script>
+        // Cart logic using localStorage for persistence and price
+        const cartBtns = document.querySelectorAll('.cart-btn');
+        const buyBtns = document.querySelectorAll('.buy-btn');
+        const cartCount = document.getElementById('cart-count');
+
+        function getCart() {
+            return JSON.parse(localStorage.getItem('cart') || '[]');
+        }
+        function setCart(cart) {
+            localStorage.setItem('cart', JSON.stringify(cart));
+        }
+        function updateCartCount() {
+            let cart = getCart();
+            let count = 0;
+            cart.forEach(item => count += item.qty || 1);
+            cartCount.textContent = count;
+        }
+
+        cartBtns.forEach(btn => {
+            btn.addEventListener('click', function () {
+                const card = btn.closest('.product-card');
+                const name = card.querySelector('h4').textContent;
+                const priceText = card.querySelector('.price').textContent.replace(/[^\d]/g, '');
+                const price = parseInt(priceText) || 0;
+                const img = card.querySelector('img') ? card.querySelector('img').src : '';
+                let cart = getCart();
+                let found = cart.find(item => item.name === name);
+                if (found) {
+                    found.qty = (found.qty || 1) + 1;
+                } else {
+                    cart.push({ name, price, img, qty: 1 });
+                }
+                setCart(cart);
+                updateCartCount();
+                btn.textContent = 'Added ✓';
+                btn.style.background = '#10b981';
+                btn.style.color = 'white';
+                setTimeout(() => {
+                    btn.textContent = 'Add to Cart';
+                    btn.style.background = '';
+                    btn.style.color = '';
+                }, 2000);
+            });
+        });
+
+        updateCartCount();
+
+        buyBtns.forEach(btn => {
+            btn.addEventListener('click', function () {
+                alert('Proceeding to checkout!');
+            });
+        });
+    </script>
+</body>
+
+</html>
